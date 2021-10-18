@@ -387,7 +387,7 @@ export class DiscordBot {
                 lookupResult.canSendEmbeds = client.user?.bot || false; // only bots can send embeds
                 return lookupResult;
             }
-            throw new Error(`Channel "${room}" not found`);
+            throw new Error(`Channel "${room}" not found desu`);
         } catch (err) {
             log.verbose("LookupRoom => ", err);
             if (hasSender) {
